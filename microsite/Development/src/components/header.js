@@ -26,8 +26,6 @@ const Header = () => {
   )
 
   const [shouldChangeHeader, setShouldChangeHeader] = useState(false)
-
-
   const MINIMUM_SCROLL = 400
   const TIMEOUT_DELAY = 400
 

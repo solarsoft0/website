@@ -57,7 +57,4 @@ const Link = ({ details, color, hoverColor, download }) => {
   )
 }
 
-
-
-
 export default Link
