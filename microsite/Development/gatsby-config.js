@@ -12,6 +12,12 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-anchor-links`,
     {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `UA-71722942-1`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
