@@ -65,9 +65,10 @@ const Footer = () => {
         <div css={newsletter}>
           <h4>Keep up with us</h4>
           <div>
-            <form>
-              <input type="email" placeholder="Email address"/>
-              <button>Submit</button>
+            <form action="//fonoster.us14.list-manage.com/subscribe/post?u=128404d6884e0be58682f5a6d&amp;id=af0ff5bf29" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate>
+              <input type="email" id="mce-EMAIL" name="EMAIL" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxLength="100" placeholder="Email address" required/>
+              <div css={hideInput} aria-hidden="true"><input type="text" name="b_128404d6884e0be58682f5a6d_af0ff5bf29" tabIndex="-1" /></div>
+              <button type="submit" value="Subscribe" name="subscribe" form="mc-embedded-subscribe-form">Submit</button>
             </form>
           </div>
         </div>
@@ -108,6 +109,8 @@ const Footer = () => {
     </footer>
   )
 }
+
+const hideInput = css`position: absolute; left: -5000px;`
 
 const footerStyles = css`
   background-color: #333741;
@@ -173,7 +176,7 @@ const newsletter = css`
     border-radius: 20px 0 0 20px;
     outline: 0;
     padding: 0 1.25em;
-    width: 80%;
+    width: 77%;
 
     @media (min-width: 1080px) {
       max-width: 221px;
