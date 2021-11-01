@@ -1,10 +1,9 @@
 /**
- * Copyright (c) 2017-present, Facebook, Inc.
+ * Copyright (c) 2021-present, Fonoster, Inc.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 
  module.exports = {
   docs: [
@@ -38,10 +37,7 @@
             'reference/Domains',
             'reference/Agents',
             'reference/CallManager',
-            'reference/Auths',
-            'reference/Funcs',
-            'reference/Secrets',
-            'reference/Storage'
+            'reference/Auths'
           ],
           collapsed: true,
         },
@@ -52,7 +48,7 @@
       type: 'category',
       label: 'Guides',
       items: [
-        'guides/voipnet'
+        'guides/voice'
       ],
       collapsed: false,
     }

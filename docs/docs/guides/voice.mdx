@@ -1,12 +1,12 @@
 ---
-title: Deploying a VoIP Network
+title: Create a Voice App
 author: P.S
 published: true
 cannonical_url: https://bit.ly/3dp2wMG
 date: 2021-06-21 04:25:00 UTC
 ---
 
-The purpose of this tutorial is to show the basics of Project Fonos. Here you will find how to create a Voice Application, add a Number, and then use that Number to originate a call. Please follow the guide in sequence, as each step builds on the last one.
+The purpose of this tutorial is to show the basics of Fonoster. Here you will find how to create a Voice Application, add a Number, and then use that Number to originate a call. Please follow the guide in sequence, as each step builds on the last one.
 
 ## Requirements
 
@@ -15,19 +15,19 @@ Before you start this guide, you will need the following:
 - A set of credentials from [here](https://github.com/login/oauth/authorize?client_id=176eada057a4bbd96736) 👈
 - An account for access to a SIP Service Provider (For US and Canada, we recommend [voip.ms](https://voip.ms/en/invite/MjE1NzA2))
 - NodeJS 14+ (Use nvm if possible)
-- Fonos command-line tool (install with `npm install -g @fonos/ctl`)
+- Fonoster command-line tool (install with `npm install -g @fonoster/ctl`)
 - Ngrok (install with `npm install -g ngrok`)
 
 You can login to the server with:
 
 ```bash
-fonos auth:login
+fonoster auth:login
 ```
 
 And your output will be similar to:
 
 ```bash
-Access your Fonos infrastructure
+Access your Fonoster infrastructure
 Press ^C at any time to quit.
 ? api endpoint api.fonoster.io
 ? access key id psanders
@@ -91,7 +91,7 @@ Is this OK? (yes) yes
 Then, with your favorite IDE open and edit the file `index.js` with the following content:
 
 ```javascript
-const { VoiceServer } = require("@fonos/voice");
+const { VoiceServer } = require("@fonoster/voice");
 const voiceServer = new VoiceServer();
 
 voiceServer.listen(async(req, res) => {
@@ -104,7 +104,7 @@ voiceServer.listen(async(req, res) => {
 Next, install the Voice module with:
 
 ```
-npm i --save @fonos/voice
+npm i --save @fonoster/voice
 ```
 
 Finally, launch the Voice Application with:
@@ -115,7 +115,7 @@ node index.js
 
 Your output will look like this:
 
-```
+```bash
 info: initializing voice server
 info: starting voice server on @ 0.0.0.0, port=3000
 ```
@@ -173,7 +173,7 @@ Creating provider YourServiceProvider... Done
 
 A Number, often referred to as DID/DOD, refers to a number managed by your SIP Service provider. 
 
-> If your Provider doesn't accept E164, you can append the `--ignore-e164-validation`
+> If your Provider doesn't accept E164, you can append the option `--ignore-e164-validation`
 
 ```bash
 fonos numbers:create --ignore-e164-validation
@@ -227,15 +227,15 @@ To make a call, you are going to need to install the SDK.
 Install the SDK, from within the `voiceapp`, with:
 
 ```bash
-npm i --save @fonos/sdk 
+npm i --save @fonoster/sdk 
 ```
 
 Next, create the script `call.js` with the following code:
 
 ```javascript
-// This will load the SDK and reuse your Fonos credentials
-const Fonos = require("@fonos/sdk");
-const callManager = new Fonos.CallManager();
+// This will load the SDK and reuse your Fonoster credentials
+const Fonoster = require("@fonoster/sdk");
+const callManager = new Fonoster.CallManager();
 
 // Few notes:
 //  1. Update the from to look exactly as the Number you added 
@@ -271,6 +271,6 @@ First, verify that Ngrok is still running. Next, compare Ngrok's URL with the we
 
 Then observe the console's output where your Voice Application is running, and see if there are any errors.
 
-## Giving feedback to Team PF
+## Giving feedback to the maintainers 
 
-We want to provide you with the best possible experience. To do that, we need your valuable feedback. Because we know you are busy, we provide two ways to get quick feedback from you. From the command line, use the `fonos bug` command to start a GitHub issue. Or, you can use the `fonos feedback` command to complete a short survey (which takes less than 30 seconds).
+We want to provide you with the best possible experience. To do that, we need your valuable feedback. Because we know you are busy, we provide two ways to get quick feedback from you. From the command line, use the `fonoster bug` command to start a GitHub issue. Or, you can use the `fonoster feedback` command to complete a short survey (which takes less than 30 seconds).

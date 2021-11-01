@@ -24,13 +24,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/fonoster/fonoster/edit/main/web/',
+          editUrl: 'https://github.com/fonoster/website/edit/beta/docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/fonoster/fonoster/edit/main/web/blog/',
+            'https://github.com/fonoster/website/edit/beta/docs/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -77,7 +77,7 @@ const config = {
             position: 'left',
             label: 'Learn',
           },
-          { to: '/docs/guides/voipnet', label: 'Guides', position: 'left' },
+          { to: '/docs/guides/voice', label: 'Guides', position: 'left' },
           { to: '/docs/reference/overview', label: 'Reference', position: 'left' },
           {
             href: 'https://github.com/fonoster/fonoster',
@@ -136,7 +136,7 @@ const config = {
               },
               {
                 label: 'Guides',
-                href: '/docs/guides/voipnet',
+                href: '/docs/guides/voice',
               },
             ],
           },

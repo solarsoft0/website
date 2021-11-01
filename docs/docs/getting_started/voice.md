@@ -25,7 +25,7 @@ cd voiceapp
 npm init # and follow the wizard
 ```
 
-Then, with your favorite IDE ocreate a file `index.js` with the following content:
+Then, with your favorite IDE create a file `index.js` with the following content:
 
 ```javascript
 const { VoiceServer } = require("@fonoster/voice");
@@ -61,7 +61,7 @@ info: starting voice server on @ 0.0.0.0, port=3000
 
 ## Using Ngrok to publish your Voice Application 
 
-Now that we have our Voice Application up and running, we need to make it available on the Internet——the fastest way to enable public access by using Ngrok. For example, with ngrok, you can publish a web server with a single command.
+Now that we have the Voice Application up and running, you need to make it available on the Internet. The fastest way to enable public access is by using Ngrok. For example, with Ngrok, you can publish a web server with a single command.
 
 On a new console, run Ngrok with the following command:
 
@@ -69,4 +69,4 @@ On a new console, run Ngrok with the following command:
 ngrok http 3000
 ```
 
-Now you can use Ngrok's URL as the Webhook of for your Fonoster `Number.`
+Now you can use Ngrok's URL as the Webhook for your Fonoster `Number.`
