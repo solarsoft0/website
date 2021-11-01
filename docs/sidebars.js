@@ -39,7 +39,7 @@
             'reference/CallManager',
             'reference/Auths'
           ],
-          collapsed: true,
+          collapsed: false,
         },
       ],
       collapsed: false,

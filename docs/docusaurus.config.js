@@ -157,8 +157,10 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Fonoster, Inc.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        defaultLanguage: 'js',
+        plugins: ['line-numbers', 'show-language'],
+        theme: require('@kiwicopple/prism-react-renderer/themes/vsDark'),
+        darkTheme: require('@kiwicopple/prism-react-renderer/themes/vsDark'),
       },
     }),
 

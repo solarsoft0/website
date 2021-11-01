@@ -1539,6 +1539,12 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
+"@kiwicopple/prism-react-renderer@github:kiwicopple/prism-react-renderer":
+  "resolved" "git+ssh://git@github.com/kiwicopple/prism-react-renderer.git#4a09100a587bce2d94d7ac8ed3564a61c6e70781"
+  "version" "1.0.2"
+  dependencies:
+    "prismjs" "^1.22.0"
+
 "@mdx-js/mdx@^1.6.21", "@mdx-js/mdx@1.6.22":
   "integrity" "sha512-AMxuLxPz2j5/6TpF/XSdKpQP1NlG0z11dFOlq+2IP/lSgl11GY8ji6S/rgsViN/L0BDvHvUMruRb7ub+24LUYA=="
   "resolved" "https://registry.npmjs.org/@mdx-js/mdx/-/mdx-1.6.22.tgz"
@@ -6784,7 +6790,7 @@
   "resolved" "https://registry.npmjs.org/prism-react-renderer/-/prism-react-renderer-1.2.1.tgz"
   "version" "1.2.1"
 
-"prismjs@^1.23.0":
+"prismjs@^1.22.0", "prismjs@^1.23.0":
   "integrity" "sha512-WCjJHl1KEWbnkQom1+SzftbtXMKQoezOCYs5rECqMN+jP+apI7ftoflyqigqzopSO3hMhTEb0mFClA8lkolgEg=="
   "resolved" "https://registry.npmjs.org/prismjs/-/prismjs-1.25.0.tgz"
   "version" "1.25.0"
