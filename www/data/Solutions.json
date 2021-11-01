@@ -5,7 +5,7 @@
     "description": "Voice Applications are first-class citizens with supports for verbs like Play, Say, Gather, etc.",
     "description_short": "",
     "label": "",
-    "url": "https://learn.fonoster.com/docs/voice"
+    "url": "https://learn.fonoster.com/docs/overview"
   },
   "authentication": {
     "name": "Authentication",
@@ -13,7 +13,7 @@
     "description": "Keep your business safe with project-level authentication based in OAuth2 and JWT tokens.",
     "description_short": "",
     "label": "",
-    "url": "https://learn.fonoster.com/docs/authentication"
+    "url": "https://learn.fonoster.com/docs/overview"
   },
   "storage": {
     "name": "Storage",
@@ -21,7 +21,7 @@
     "description": "Store, organize, and serve your sounds on S3 buckets that you later use for analysis.",
     "description_short": "",
     "label": "",
-    "url": "https://learn.fonoster.com/docs/storage"
+    "url": "https://learn.fonoster.com/docs/overview"
   },
   "functions": {
     "name": "Functions",
@@ -29,6 +29,6 @@
     "description": "Deploy existing microservices using Express.js, Sinatra, ASP.NET Core or simplify with functions.",
     "description_short": "",
     "label": "Experimental",
-    "url": "https://learn.fonoster.com/docs/functions"
+    "url": "https://learn.fonoster.com/docs/overview"
   }
 }

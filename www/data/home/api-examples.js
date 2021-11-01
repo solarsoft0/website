@@ -22,10 +22,10 @@ voiceServer.listen(async(req, res) => {
   },
   {
     lang: 'js',
-    title: 'Call',
+    title: 'CallManager',
     description: 'Receive realtime messages in an example chat room',
-    code: `const Fonos = require("@fonoster/sdk")
-const callManager = new Fonos.CallManager()
+    code: `const Fonoster = require("@fonoster/sdk")
+const callManager = new Fonoster.CallManager()
 
 // Replace the webhook with the one from your Ngrok
 callManager.call({

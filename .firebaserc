@@ -6,7 +6,7 @@
     "fonoster-website": {
       "hosting": {
         "main": [
-          "fonoster"
+          "fonoster-website"
         ],
         "learn": [
           "fonoster-learn"
