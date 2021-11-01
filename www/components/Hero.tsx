@@ -37,7 +37,7 @@ const Hero = () => {
                           </Button>
                         </a>
                       </Link>
-                      <Link href="https://learn.fonoster.com/docs" as="https://learn.fonoster.com/docs">
+                      <Link href="https://learn.fonoster.com" as="https://learn.fonoster.com">
                         <a>
                           <Button
                             className="mt-10 py-3"

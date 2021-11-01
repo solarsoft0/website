@@ -4,23 +4,11 @@
     "links": [
       {
         "text": "VoIP Net",
-        "url": "https://learn.fonoster.com/docs/intro#voipnet"
+        "url": "https://learn.fonoster.com/docs/getting_started/voipnet"
       },
       {
         "text": "Voice Applications",
-        "url": "https://learn.fonoster.com/docs/intro#voice"
-      },
-      {
-        "text": "Storage",
-        "url": "https://learn.fonoster.com/docs/intro#storage"
-      },
-      {
-        "text": "Functions",
-        "url": null
-      },
-      {
-        "text": "Dialogflow Connector",
-        "url": "https://learn.fonoster.com/docs/intro#dialogflow"
+        "url": "https://learn.fonoster.com/docs/getting_started/voice"
       }
     ]
   },
@@ -46,15 +34,15 @@
     "links": [
       {
         "text": "Documentation",
-        "url": "https://learn.fonoster.com/docs"
+        "url": "https://learn.fonoster.com"
       },
       {
         "text": "API Reference",
-        "url": "https://learn.fonoster.com/docs/reference"
+        "url": "https://learn.fonoster.com/docs/reference/overview"
       },
       {
         "text": "Guides",
-        "url": "https://learn.fonoster.com/docs/guides"
+        "url": "https://learn.fonoster.com/docs/guides/voice"
       }
     ]
   },

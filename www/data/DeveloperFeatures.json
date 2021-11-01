@@ -3,12 +3,12 @@
     "name": "Install from NPM or CDN",
     "description": "Use the SDKs in the Browser or NodeJS application",
     "badge": "",
-    "url": "https://learn.fonoster.com/docs/sdk"
+    "url": "https://learn.fonoster.com/docs/getting_started/installation#nodejs"
   },
   {
     "name": "CLI",
     "description": "Use the command-line tool to rapidly create and deploy your applications",
     "badge": "",
-    "url": "https://learn.fonoster.com/docs/cli"
+    "url": "https://learn.fonoster.com/docs/getting_started/installation#browser"
   }
 ]
