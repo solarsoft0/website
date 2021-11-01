@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Product",
+    "links": [
+      {
+        "text": "VoIP Net",
+        "url": "https://learn.fonoster.com/docs/intro#voipnet"
+      },
+      {
+        "text": "Voice Applications",
+        "url": "https://learn.fonoster.com/docs/intro#voice"
+      },
+      {
+        "text": "Storage",
+        "url": "https://learn.fonoster.com/docs/intro#storage"
+      },
+      {
+        "text": "Functions",
+        "url": null
+      },
+      {
+        "text": "Dialogflow Connector",
+        "url": "https://learn.fonoster.com/docs/intro#dialogflow"
+      }
+    ]
+  },
+  {
+    "title": "Resources",
+    "links": [
+      {
+        "text": "Support",
+        "url": "https://learn.fonoster.com/docs/support"
+      },
+      {
+        "text": "Github",
+        "url": "https://github.com/fonoster/fonoster"
+      },
+      {
+        "text": "Slack Community",
+        "url": "https://form.typeform.com/to/CvQqk9"
+      }
+    ]
+  },
+  {
+    "title": "Developers",
+    "links": [
+      {
+        "text": "Documentation",
+        "url": "https://learn.fonoster.com/docs"
+      },
+      {
+        "text": "API Reference",
+        "url": "https://learn.fonoster.com/docs/reference"
+      },
+      {
+        "text": "Guides",
+        "url": "https://learn.fonoster.com/docs/guides"
+      }
+    ]
+  },
+  {
+    "title": "Company",
+    "links": [
+      {
+        "text": "Blog",
+        "url": "https://learn.fonoster.com/docs/blog"
+      },
+      {
+        "text": "DEV",
+        "url": "https://dev.to/t/fonoster"
+      }
+    ]
+  }
+]

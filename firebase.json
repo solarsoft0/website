@@ -1,0 +1,22 @@
+{
+  "hosting": [
+    {
+      "target": "learn",
+      "public": "docs/build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "target": "main",
+      "public": "www/out",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
+}

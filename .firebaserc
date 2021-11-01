@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "fonoster-website"
+  },
+  "targets": {
+    "fonoster-website": {
+      "hosting": {
+        "main": [
+          "fonoster"
+        ],
+        "learn": [
+          "fonoster-learn"
+        ]
+      }
+    }
+  }
+}
