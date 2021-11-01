@@ -22,4 +22,4 @@ projects.createProject({ ... })
   .catc(console.error)
 ```
 
-> When using the `@fonoster/websdk` your endpoint must begin with `http` or `https` since you are connecting to the Rest API instead of GRPC.
+> When using the `@fonoster/websdk` your endpoint must begin with `http` or `https` since you are connecting to the Rest API instead of gRPC.
