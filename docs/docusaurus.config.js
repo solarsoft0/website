@@ -24,13 +24,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/fonoster/fonoster/edit/main/website/',
+          editUrl: 'https://github.com/fonoster/fonoster/edit/main/web/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/fonoster/fonoster/edit/main/website/blog/',
+            'https://github.com/fonoster/fonoster/edit/main/web/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -73,12 +73,12 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'overview',
             position: 'left',
             label: 'Learn',
           },
           { to: '/docs/guides/voipnet', label: 'Guides', position: 'left' },
-          { to: '/docs/reference/Users', label: 'Reference', position: 'left' },
+          { to: '/docs/reference/overview', label: 'Reference', position: 'left' },
           {
             href: 'https://github.com/fonoster/fonoster',
             className: 'navbar-item-github',
@@ -98,24 +98,12 @@ const config = {
             items: [
               {
                 label: 'VoIP Net',
-                to: '/docs/intro#voipnet',
+                to: 'docs/getting_started/voipnet',
               },
               {
                 label: 'Voice Applications',
-                to: '/docs/intro#voice',
-              },
-              {
-                label: 'Storage',
-                to: '/docs/intro#storage',
-              },
-              {
-                label: 'Functions',
-                to: '/docs/intro#functions',
-              },
-              {
-                label: 'Dialogflow Connector',
-                to: '/docs/intro#dialogflow',
-              },
+                to: 'docs/getting_started/voice',
+              }
             ],
           },
           {
@@ -144,11 +132,11 @@ const config = {
               },
               {
                 label: 'API Reference',
-                href: '/reference',
+                href: '/docs/reference/overview',
               },
               {
                 label: 'Guides',
-                href: '/guides',
+                href: '/docs/guides/voipnet',
               },
             ],
           },

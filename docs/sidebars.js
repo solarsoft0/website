@@ -7,43 +7,12 @@
 
 
  module.exports = {
-  test: [
-    {
-      type: 'category',
-      label: 'Introduction',
-      items: [
-        'intro',
-        'community',
-        'support'
-      ],
-      collapsed: false,
-    },
-    {
-      type: 'category',
-      label: 'Getting Started',
-      items: [
-        'getting_started/installation',
-        'getting_started/cli',
-        'getting_started/voipnet',
-        'getting_started/voice'
-      ],
-      collapsed: false,
-    },
-    {
-      type: 'category',
-      label: 'Guides',
-      items: [
-        //'guides/voipnet'
-      ],
-      collapsed: false,
-    }
-  ],
   docs: [
     {
       type: 'category',
       label: 'Introduction',
       items: [
-        'intro',
+        'overview',
         'community',
         'support'
       ],
@@ -61,6 +30,7 @@
           type: 'category',
           label: 'Reference',
           items: [
+            'reference/overview',
             'reference/Users',
             'reference/Projects',
             'reference/Providers',

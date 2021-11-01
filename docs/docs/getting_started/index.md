@@ -1,6 +1,12 @@
+---
+id: installation
+title: Installation
+description: Installing the SDK
+---
+
 # Installation
 
-Fonoster libraries are available for NodeJS via the `@fonoster/sdk` or the web via the `@fonoster/websdk`. 
+Fonoster libraries are available for NodeJS via the `@fonoster/sdk` package or the Browser via `@fonoster/websdk`. 
 
 ## NodeJS
 
@@ -23,12 +29,12 @@ npm install @fonoster/websdk
 If you're using a bundler (like Browserify or webpack), you can import the WebSDK module with:
 
 ```Typescript
-import SDK from "@fonoster/websdk";
+import Fonoster from "@fonoster/websdk";
 ```
 
 Or via CDN
 
 ```html
-<script src="https://unpkg.com/@fonoster/websdk@0.2.8/dist/websdk.js"></script>
+<script src="https://unpkg.com/@fonoster/websdk@0.2.13/dist/websdk.js"></script>
 // This will populate the object `Fonoster`
 ```

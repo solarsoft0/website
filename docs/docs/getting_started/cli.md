@@ -1,12 +1,12 @@
 ---
 id: cli
 title: CLI
-description: Fonoster command-line tool
+description: Command-line tool
 ---
 
-# Fonoster Command-line Tool
+# Command-line Tool
 
-Fonoster command-line tool will help you manage your Fonoster instance. From creating `Agents` to deploying `Functions` and more.
+Fonoster's command-line tool will help you manage your Fonoster instances. From creating `Agents` to deploying `Functions` and more.
 
 ## Installing
 
@@ -18,7 +18,7 @@ npm -g install @fonoster/ctl
 
 ## Commands
 
-The command-line tool comes with built-in commands covering all main use-cases and additional commands via plugins. Most commands are "collapsed" under a section. For example, the `agents` sections contains the following commands:
+The command-line tool comes with built-in commands covering all main use-cases and additional commands via plugins. Most commands are "collapsed" under a section. For example, the `agents` sections contain the following commands:
 
 - `agents:create`  creates a new agent resource
 - `agents:delete`  removes agent from a project
@@ -28,11 +28,11 @@ The command-line tool comes with built-in commands covering all main use-cases a
 
 ## Additional plugins
 
-You can find additional commands for `Function` deployment ot `Secrets` creation on [Github](https://github.com/fonoster/marketplace)
+You can find additional commands for `Function` deployment and creating `Secrets` creation on [Github](https://github.com/fonoster/marketplace)
 
 ## Command view
 
-This is how the command-line looks like.
+This is how the command line looks like:
 
 ```
   _____                     _            
@@ -60,8 +60,7 @@ TOPICS
 
 COMMANDS
   bug       start a bug report 🐞
-  feedback  let'us know how we're doing
+  feedback  let us know how we're doing
   help      display help for fonoster
   plugins   list installed plugins
 ```
-

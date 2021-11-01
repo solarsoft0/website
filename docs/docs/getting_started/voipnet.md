@@ -26,4 +26,4 @@ Creating provider voip ms... c2uO-eO7tR
 
 > Adding a number is just as easy with `fonoster numbers:create`
 
-You can also create your own Office/Home network by combining `Domains` and `Agents`. Thanks to SIP, you can connect to your VoIP Net using a Softphone or IP Phone.
+You can also create your Office/Home network by combining `Domains` and `Agents`. Thanks to SIP, you can connect to your VoIP Net using a Softphone or IP Phone.
