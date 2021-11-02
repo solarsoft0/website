@@ -30,6 +30,7 @@
           label: 'Reference',
           items: [
             'reference/overview',
+            'reference/VoiceResponse',
             'reference/Users',
             'reference/Projects',
             'reference/Providers',
