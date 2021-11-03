@@ -39,7 +39,7 @@ const request = {
   avatar: "https://avatar.com/avt?userId=2124252"
 }
 
-ysers.createUser(request)
+users.createUser(request)
 .then(result => {
   console.log(result)             // successful response
 }).catch(e => console.error(e))   // an error occurred

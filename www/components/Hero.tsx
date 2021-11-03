@@ -50,7 +50,7 @@ const Hero = () => {
                         </a>
                       </Link>
                     </Space>
-                    <p className="mt-8 text-sm text-dark-400 tracking-wide sm:mt-10">MIT license</p>
+                    <p className="mt-8 text-sm text-dark-400 tracking-wide sm:mt-10">Veteran Owned and Operated</p>
                   </div>
                 </div>
                 <div className="flex content-center mt-16 sm:mt-24 lg:absolute lg:-right-80 lg:w-9/12 lg:mt-0 lg:col-span-6 xl:relative xl:right-0 xl:w-full">
