@@ -17,11 +17,11 @@ Fonoster is developed in the open. Here are some of the channels we use to commu
 
 ## Contributing
 
-We welcome community contributions! Please see the [CONTRIBUTING.md](https://github.com/fonoster/fonoster/blob/main/CONTRIBUTING.md) file in the respective Fonoster repository for instructions on how to submit changes. If you are planning on making more elaborate or controversial changes, please discuss them with the community before sending a pull request.
+We welcome community contributions! Please see the [CONTRIBUTING.md](https://github.com/fonoster/fonoster/blob/main/CONTRIBUTING.md) file in the respective Fonoster repository for instructions on how to submit changes. If you want to make more elaborate or controversial changes, please discuss them with the community before sending a pull request.
 
 ## Developer Meetings
 
-We strive to be as open and public as possible. Technical discussions happen on Slack and we also host weekly "Office Hours" as an opportunity to meet the maintainers and ask questions.
+We strive to be as open and public as possible. Technical discussions happen on Slack, and we also host weekly "Office Hours" for meetings with the maintainers and ask questions.
 
 ## Code of Conduct
 

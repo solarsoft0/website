@@ -1,10 +1,4 @@
----
-id: installation
-title: Installation
-description: Installing the SDK
----
-
-# Installation
+# Using the Javascript SDKs
 
 Fonoster libraries are available for NodeJS via the `@fonoster/sdk` package or the Browser via `@fonoster/websdk`. 
 

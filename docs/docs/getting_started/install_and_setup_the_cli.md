@@ -1,10 +1,4 @@
----
-id: cli
-title: CLI
-description: Command-line tool
----
-
-# Command-line Tool
+# Install and setup the CLI
 
 Fonoster's command-line tool will help you manage your Fonoster instances. From creating `Agents` to deploying `Functions` and more.
 
@@ -16,7 +10,7 @@ The command-line tool is available via NPM:
 npm -g install @fonoster/ctl
 ```
 
-## Commands
+## Commands and subcommands
 
 The command-line tool comes with built-in commands covering all main use-cases and additional commands via plugins. Most commands are "collapsed" under a section. For example, the `agents` sections contain the following commands:
 
@@ -26,9 +20,9 @@ The command-line tool comes with built-in commands covering all main use-cases a
 - `agents:list`    list registered agents
 - `agents:update`  updates a agent at the SIP Proxy subsystem
 
-## Additional plugins
+## Authenticating the CLI
 
-You can find additional commands for `Function` deployment and creating `Secrets` creation on [Github](https://github.com/fonoster/marketplace)
+To authenticate the CLI, you need to issue the `fonoster auth:login` command. You can point the CLI to your own Fonoster instance, or use our [as a service](https://console.fonoster.io) option.
 
 ## Command view
 
@@ -64,3 +58,5 @@ COMMANDS
   help      display help for fonoster
   plugins   list installed plugins
 ```
+
+For detailed information about Fonoster's command-line interface, please visit the [NPM](https://www.npmjs.com/package/@fonoster/ctl) page.

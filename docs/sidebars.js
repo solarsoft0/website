@@ -21,10 +21,15 @@
       type: 'category',
       label: 'Getting Started',
       items: [
-        'getting_started/installation',
-        'getting_started/cli',
-        'getting_started/voipnet',
-        'getting_started/voice',
+        'getting_started/overview',
+        'getting_started/create_an_account',
+        'getting_started/install_and_setup_the_cli',
+        'getting_started/configure_a_number',
+        'getting_started/create_a_voice_application',
+        'getting_started/receive_and_respond_to_a_call',
+        'getting_started/make_an_outbound_call',
+        'getting_started/troubleshooting',
+        'getting_started/feedback',
         {
           type: 'category',
           label: 'Reference',
@@ -40,16 +45,19 @@
             'reference/CallManager',
             'reference/Auths'
           ],
-          collapsed: false,
+          collapsed: true,
         },
       ],
       collapsed: false,
     },
     {
       type: 'category',
-      label: 'Guides',
+      label: 'Tutorials',
       items: [
-        'guides/voice'
+        'tutorials/using_google_speech',
+        'tutorials/connecting_with_dialogflow',
+        'tutorials/office_or_home_setup',
+        'tutorials/using_the_javascript_sdks'
       ],
       collapsed: false,
     }

@@ -1,8 +1,6 @@
-# Voice
+# Create a Voice Application
 
-## Creating a basic Voice Application
-
-A Voice Application is a server that takes control of the flow in a call. A Voice Application can use any combination of the following verbs:
+A Programmable Voice Application is a server that takes control of the flow in a call. A Voice Application can use any combination of the following verbs:
 
 - `Answer` - Accepts an incoming call
 - `Hangup` - Closes the call
@@ -35,13 +33,14 @@ voiceServer.listen(async(req, res) => {
   console.log(req);
   await res.answer();
   await res.play("sound:hello-world");
+  await res.hangup();
 });
 ```
 
 Next, install the Voice module with:
 
 ```
-npm install  @fonoster/voice
+npm install @fonoster/voice
 ```
 
 Finally, launch the Voice Application with:
@@ -63,10 +62,10 @@ info: starting voice server on @ 0.0.0.0, port=3000
 
 Now that we have the Voice Application up and running, you need to make it available on the Internet. The fastest way to enable public access is by using Ngrok. For example, with Ngrok, you can publish a web server with a single command.
 
-On a new console, run Ngrok with the following command:
+Run Ngrok, in your console, with the following command:
 
 ```bash
 ngrok http 3000
 ```
 
-Now you can use Ngrok's URL as the Webhook for your Fonoster `Number.`
+Now you can use Ngrok's URL as the webhook on any of your Fonoster Numbers.

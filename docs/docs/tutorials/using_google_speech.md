@@ -1,0 +1,3 @@
+# Using Fonoster with Google Speech APIs
+
+Checkback on a few hours...
