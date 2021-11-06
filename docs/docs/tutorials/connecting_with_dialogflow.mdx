@@ -1,0 +1,98 @@
+# Connecting Dialogflow and Fonoster
+
+[Rox AI](https://github.com/fonoster/rox) is a connector between Dialogflow and Fonoster. Rox AI is for creating Programmable Voice Applications without having to do any coding.
+
+## Requirements
+
+Before you start this guide, you will need the following:
+
+- Google Cloud Credentials with access to Speech APIs and Dialogflow 
+- Docker & Docker Compose
+
+## Overview
+
+Y ou can listen to the final result in the followin video:
+
+<iframe width="100%" height="300px" src="https://www.youtube.com/embed/41Rx8KPb5GU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Preparing the environment
+
+Rox AI ships as a Docker container, and has everything you need to connect with Dialogflow. All it takes is a few environment variables. 
+
+In your favorite IDE open the `.env` file, and then copy and paste the following content:
+
+```bash
+// .env
+# Uncomment if you need authentication
+# NGROK_AUTH=
+NGROK_PROTOCOL=http
+NGROK_PORT=rox:3000
+ASR_ENGINE=google
+TTS_ENGINE=google
+CONFIG=.
+```
+
+Next, open a file named `docker-compose.yml` and paste the content of this YAML.
+
+```yml
+version: '3.8'
+
+services:
+  rox:
+    image: fonoster/rox:latest
+    # Be sure to remove this while in production 
+    ports:
+      - 3000:3000
+      - 3001:3001
+    environment:
+      - INTENTS_ENGINE
+      - INTENTS_ENGINE_AGENT
+      - INTENTS_ENGINE_LOCATION
+      - ASR_ENGINE
+      - TTS_ENGINE
+      - TTS_VOICE
+      - INITIAL_DTMF
+      - WELCOME_INTENT_TRIGGER
+      - ACTIVATION_INTENT
+      - INTERACTION_TIMEOUT
+      - EVENTS_ENABLED
+      - ACTIVATION_TIMEOUT
+      - LANGUAGE_CODE  
+    volumes:
+      - ${CONFIG}/google.json:/home/fonoster/.fonoster/google.json
+    networks:
+      - default
+
+  ngrok:
+    image: wernight/ngrok:latest
+    ports:
+      - 4040:4040
+    environment:
+      - NGROK_PROTOCOL
+      - NGROK_PORT
+      - NGROK_AUTH
+    depends_on:
+      - rox
+    networks:
+      - default
+```
+
+By now, your folder should look like this:
+
+```bash
+$ tree -a
+.
+├── .env
+├── docker-compose.yml
+└── google.json
+
+0 directories, 3 files
+```
+
+## Running the Connector
+
+```bash
+docker-compose up
+```
+
+You are all set! In the output, look for Ngrok's URL and use the value as the Webhook of your Fonoster Number.
