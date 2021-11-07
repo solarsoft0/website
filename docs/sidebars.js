@@ -56,7 +56,6 @@
       items: [
         'tutorials/using_google_speech',
         'tutorials/connecting_with_dialogflow',
-        'tutorials/office_or_home_setup',
         'tutorials/using_the_javascript_sdks'
       ],
       collapsed: false,
