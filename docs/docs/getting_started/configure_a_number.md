@@ -11,7 +11,7 @@ Once you have a VoIP provider, you will need to compile the following informatio
 - Trunk Host/IP
 - SIP Username for registration
 - SIP Password for registration
-- Transport (usually `UDP/TCP)
+- Transport (usually `UDP/TCP`)
 - Phone number ideally in E164 format
 
 ## Creating a VoIP Provider
