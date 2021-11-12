@@ -52,8 +52,9 @@ node index.js
 Your output will look like this:
 
 ```
+$ node index.js 
 info: initializing voice server
-info: starting voice server on @ 0.0.0.0, port=3000
+info: starting voice server @ 0.0.0.0, port=3000, path=/voiceapp
 ```
 
 > Your app will live at `http://127.0.0.1:3000`. ⚠️ Be sure to leave the server up!

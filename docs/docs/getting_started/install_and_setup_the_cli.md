@@ -4,7 +4,7 @@ Fonoster's command-line tool will help you manage your Fonoster instances. From 
 
 ## Installing
 
-The command-line tool is available via NPM:
+The command-line tool is available via NPM. You can install the command with:
 
 ```bash
 npm -g install @fonoster/ctl
