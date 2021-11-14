@@ -1,4 +1,4 @@
-# Create an Account
+# Create a User Account
 
 > If you already have a Fonoster account and a phone number, you're all set here! [Log in](https://console.fonoster.io) and feel free to jump to the next step.
 
