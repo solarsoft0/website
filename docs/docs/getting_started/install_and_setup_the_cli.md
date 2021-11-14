@@ -28,35 +28,6 @@ To authenticate the CLI, you need to issue the `fonoster auth:login` command. Yo
 
 This is how the command line looks like:
 
-```
-  _____                     _            
- |  ___|__  _ __   ___  ___| |_ ___ _ __ 
- | |_ / _ \| '_ \ / _ \/ __| __/ _ \ '__|
- |  _| (_) | | | | (_) \__ \ ||  __/ |   
- |_|  \___/|_| |_|\___/|___/\__\___|_|   
-                                         
-
-Command-Line for Fonoster
-
-VERSION
-  @fonoster/ctl/0.2.13 darwin-x64 node-v14.16.0
-
-USAGE
-  $ fonoster [COMMAND]
-
-TOPICS
-  agents     manage sip agents
-  auth       manage fonoster credentials
-  domains    manage sip domains
-  numbers    manage sip numbers
-  plugins    list installed plugins
-  providers  manage sip providers
-
-COMMANDS
-  bug       start a bug report 🐞
-  feedback  let us know how we're doing
-  help      display help for fonoster
-  plugins   list installed plugins
-```
+![Console](/img/console.png)
 
 For detailed information about Fonoster's command-line interface, please visit the [NPM](https://www.npmjs.com/package/@fonoster/ctl) page.

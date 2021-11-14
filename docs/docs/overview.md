@@ -1,6 +1,6 @@
 # Overview
 
-![Docusaurus](/img/flow.png)
+![Flow](/img/flow.png)
 
 Fonoster - The Open Source Twilio Alternative
 
