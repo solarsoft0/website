@@ -11,8 +11,7 @@ const Fonoster = require("@fonoster/sdk")
 
 // Init with credentials
 const projects = new Fonoster.Projects({
-  endpoint: "api.fonoster.io",
-  accessKeyId: "618572e3ec11d10600000001",
+  accessKeyId: "PJ618572e3ec11d10600000001",
   accessKeySecret: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 })
 
@@ -22,4 +21,4 @@ projects.createProject({ ... })
   .catc(console.error)
 ```
 
-> When using the `@fonoster/websdk` your endpoint must begin with `http` or `https` since you are connecting to the Rest API instead of gRPC.
+> When using the `@fonoster/websdk` your endpoint must begin with `http` or `https` since you are connecting to a Rest API instead of gRPC.
