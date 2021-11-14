@@ -12,8 +12,8 @@ const Fonoster = require("@fonoster/sdk")
 // Init with credentials
 const projects = new Fonoster.Projects({
   endpoint: "api.fonoster.io",
-  accessKeyId: "",
-  accessKeySecret: ""
+  accessKeyId: "618572e3ec11d10600000001",
+  accessKeySecret: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 })
 
 // Begin using your API
