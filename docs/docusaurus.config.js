@@ -98,6 +98,10 @@ const config = {
             title: 'Product',
             items: [
               {
+                label: 'Marketplace',
+                to: 'https://marketplace.fonoster.com',
+              },
+              {
                 label: 'VoIP Net',
                 to: 'docs/getting_started/voipnet',
               },

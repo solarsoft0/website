@@ -4,8 +4,6 @@
   "description": "Fonoster main website",
   "private": true,
   "scripts": {
-    "build": "cd docs && npm run build",
-    "deploy": "",
     "emulate": "firebase emulators:start"
   },
   "license": "MIT"

@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "count": 2,
+      "id": "all",
+      "name": "All categories"
+    },
+    {
+      "count": 0,
+      "id": "provider",
+      "name": "VoIP Provider"
+    },
+    {
+      "count": 0,
+      "id": "tts",
+      "name": "Text to Speech"
+    },
+    {
+      "count": 0,
+      "id": "asr",
+      "name": "Automatic Speech Recognition"
+    },
+    {
+      "count": 0,
+      "id": "cli",
+      "name": "Command-Line Plugin"
+    },
+    {
+      "count": 2,
+      "id": "nlu",
+      "name": "Natural Language Understanding"
+    }
+  ]
+}

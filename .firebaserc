@@ -10,6 +10,9 @@
         ],
         "learn": [
           "fonoster-learn"
+        ],
+        "marketplace": [
+          "fonoster-marketplace"
         ]
       }
     }

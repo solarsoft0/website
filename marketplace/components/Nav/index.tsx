@@ -156,7 +156,6 @@ const Nav = (props: Props) => {
       <Announcement />
       <div className="sticky top-0 z-50">
         <nav className="bg-white dark:bg-gray-800 border-b dark:border-gray-600">
-          {/* <div className="lg:container mx-auto relative flex justify-between h-16 lg:px-10 xl:px-0"> */}
           <div className="lg:container mx-auto relative flex justify-between h-16 lg:px-16 xl:px-20">
             <HamburgerButton toggleFlyOut={() => setOpen(true)} />
             <div className="flex-1 flex items-center justify-center sm:items-stretch lg:justify-between">
