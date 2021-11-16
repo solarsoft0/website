@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "count": 2,
+      "count": 4,
       "id": "all",
       "name": "All categories"
     },
@@ -11,12 +11,12 @@
       "name": "VoIP Provider"
     },
     {
-      "count": 0,
+      "count": 1,
       "id": "tts",
       "name": "Text to Speech"
     },
     {
-      "count": 0,
+      "count": 1,
       "id": "asr",
       "name": "Automatic Speech Recognition"
     },

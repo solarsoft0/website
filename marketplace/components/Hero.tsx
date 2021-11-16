@@ -6,7 +6,7 @@ const Hero = () =>  {
   const { basePath } = useRouter()
 
   return (
-    <div className="overflow-hidden bg-gray-800">
+    <div className="overflow-hidden bg-gray-800 border-b dark:border-gray-600">
       <SectionContainer className="pt-24">
         <div className="relative">
           <main className="">

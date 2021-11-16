@@ -6,8 +6,30 @@
       ],
       "certified": true,
       "changelog": "https://raw.githubusercontent.com/fonoster/rox/main/CHANGELOG.md",
+      "description": "Lifelike conversational AI with state-of-the-art virtual agent, CX edition (advance)",
+      "homepage": "https://fonoster.com",
+      "icon": "https://raw.githubusercontent.com/fonoster/rox/main/assets/cx_logo.png",
+      "id": "dialogflow-cx",
+      "issues": "https://github.com/fonoster/rox/issues",
+      "license": "MIT",
+      "name": "Dialogflow Connector (CX)",
+      "org": "Fonoster",
+      "picture": "/brand-assets/fonoster.svg",
+      "readme": "https://raw.githubusercontent.com/fonoster/rox/main/MKPLACE.md",
+      "related": [
+        "dialogflow-es"
+      ],
+      "repository": "https://github.com/fonoster/rox",
+      "sponsored": false
+    },
+    {
+      "categories": [
+        "nlu"
+      ],
+      "certified": true,
+      "changelog": "https://raw.githubusercontent.com/fonoster/rox/main/CHANGELOG.md",
       "description": "Lifelike conversational AI with state-of-the-art virtual agent, ES edition (standard)",
-      "homepage": "https://cloud.google.com/dialogflow",
+      "homepage": "https://fonoster.com",
       "icon": "https://raw.githubusercontent.com/fonoster/rox/main/assets/es_logo.png",
       "id": "dialogflow-es",
       "issues": "https://github.com/fonoster/rox/issues",
@@ -24,24 +46,46 @@
     },
     {
       "categories": [
-        "nlu"
+        "asr"
       ],
       "certified": true,
-      "changelog": "https://raw.githubusercontent.com/fonoster/rox/main/CHANGELOG.md",
-      "description": "Lifelike conversational AI with state-of-the-art virtual agent, CX edition (advance)",
-      "homepage": "https://cloud.google.com/text-to-speech",
-      "icon": "https://raw.githubusercontent.com/fonoster/rox/main/assets/cx_logo.png",
-      "id": "dialogflow-cx",
-      "issues": "https://github.com/fonoster/rox/issues",
+      "changelog": "https://github.com/fonoster/fonoster/blob/main/CHANGELOG.md",
+      "description": "Accurately convert speech into text using an API powered by Google’s AI technologies.",
+      "homepage": "https://fonoster.com",
+      "icon": "https://raw.githubusercontent.com/fonoster/fonoster/main/mods/googleasr/assets/logo.png",
+      "id": "googleasr",
+      "issues": "https://github.com/fonoster/fonoster/issues",
       "license": "MIT",
-      "name": "Dialogflow Connector (CX)",
+      "name": "Google Speech to Text",
       "org": "Fonoster",
       "picture": "/brand-assets/fonoster.svg",
-      "readme": "https://raw.githubusercontent.com/fonoster/rox/main/MKPLACE.md",
+      "readme": "https://raw.githubusercontent.com/fonoster/fonoster/main/mods/googleasr/README.md",
       "related": [
-        "dialogflow-es"
+        "googletts"
       ],
-      "repository": "https://github.com/fonoster/rox",
+      "repository": "https://github.com/fonoster/fonoster",
+      "sponsored": false
+    },
+    {
+      "categories": [
+        "tts"
+      ],
+      "certified": true,
+      "changelog": "https://github.com/fonoster/fonoster/blob/main/CHANGELOG.md",
+      "description": "Convert text into natural-sounding speech using an API powered by Google’s AI tech",
+      "homepage": "https://fonoster.com",
+      "icon": "https://raw.githubusercontent.com/fonoster/fonoster/main/mods/googletts/assets/logo.png",
+      "id": "googletts",
+      "issues": "https://github.com/fonoster/fonoster/issues",
+      "license": "MIT",
+      "name": "Google Text to Speech",
+      "org": "Fonoster",
+      "picture": "/brand-assets/fonoster.svg",
+      "readme": "https://raw.githubusercontent.com/fonoster/fonoster/main/mods/googletts/README.md",
+      "related": [
+        "googleasr"
+      ],
+      "repository": "https://github.com/fonoster/fonoster",
       "sponsored": false
     }
   ]
