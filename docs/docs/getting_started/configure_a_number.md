@@ -16,20 +16,31 @@ Once you have a VoIP provider, you will need to compile the following informatio
 
 ## Creating a VoIP Provider
 
-Once you have your trunk information, proceed to call the next command and follow the wizard:
+Once you have your trunk information, follow the next few steps:
 
-```bash
-fonoster providers:create
+```none
+1. Open a new terminal
+2. Add a new Provider
 ```
 
-> List your providers with `fonoster providers:ls`
+<video width="100%" playsInline="" controls="muted">
+ <source src="/videos/configure_a_number_1.mov" type="video/mp4" playsInline="" />
+</video>
 
 ## Adding your Number
 
-Adding a new Number is just as easy. Simply run the next command, and answer all the questions:
+Adding a new Number is just as easy:
 
-```bash
-fonoster numbers:create
+```none
+1. Open a new terminal
+2. Issue a create number command
+3. Ensure the number has the format given by your provider
+4. Skip the "address of record"
+5. Enter the application's webhook (as per the last guide)
 ```
 
-You are all set. We will now create the first Voice Application.
+<video width="100%" playsInline="" controls="muted">
+ <source src="/videos/configure_a_number_2.mov" type="video/mp4" playsInline="" />
+</video>
+
+You are all set. Next we will test the application.

@@ -5,9 +5,11 @@ Did you know that with Fonoster can you can initiate a phone call from Node.js?
 With a single API request, we can make an outbound call from the Fonoster Number. Open a new file called `call.js` and type or paste in the following code.
 
 ```javascript
-// This will load the SDK and reuse your Fonoster credentials
 const Fonoster = require("@fonoster/sdk");
-const callManager = new Fonoster.CallManager();
+const callManager = new Fonoster.CallManager({
+  accessKeyId: "PJ619154d081467a0700000001",
+  accessKeySecret: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ25vc3RlciIsInJvbGUiOiJQUk9KRUNUIiwiYWNjZXNz"
+});
 
 // Few notes:
 //  1. Update the from to look exactly as the Number you added 

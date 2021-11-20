@@ -4,11 +4,17 @@ Fonoster's command-line tool will help you manage your Fonoster instances. From 
 
 ## Installing
 
-The command-line tool is available via NPM. You can install the command with:
+The command-line tool is available via NPM. Use the following steps to install the tool as a global command.
 
-```bash
-npm -g install @fonoster/ctl
+```none
+1. Open a new terminal
+2. Type "npm -g install @fonoster/ctl"
+3. Wait for the process to complete
 ```
+
+<video width="100%" playsInline="" controls="muted">
+ <source src="/videos/install_and_setup_the_cli_1.mov" type="video/mp4" playsInline="" />
+</video>
 
 ## Commands and subcommands
 
@@ -22,12 +28,18 @@ The command-line tool comes with built-in commands covering all main use-cases a
 
 ## Authenticating the CLI
 
-To authenticate the CLI, you need to issue the `fonoster auth:login` command. You can point the CLI to your own Fonoster instance, or use our [as a service](https://console.fonoster.io) option.
+You can point the CLI to your own Fonoster instance, or use our [as a service](https://console.fonoster.io) option. To use the as-a-service option follow the the next steps:
 
-## Command view
+```none
+1. Go to https://console.fonoster.io/ to get your credentials
+2. Open a new terminal
+3. Type the command "fonoster auth:login"
+4. Login using your credentials
+```
 
-This is how the command line looks like:
+<video width="100%" playsInline="" controls="muted">
+ <source src="/videos/install_and_setup_the_cli_2.mov" type="video/mp4" playsInline="" />
+</video>
 
-![Console](/img/console.png)
 
 For detailed information about Fonoster's command-line interface, please visit the [NPM](https://www.npmjs.com/package/@fonoster/ctl) page.

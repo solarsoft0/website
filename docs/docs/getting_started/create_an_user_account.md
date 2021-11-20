@@ -10,3 +10,9 @@ With your User account, you will be able to:
 - Create and manage Projects
 
 To obtain your credentials, you'll need to [sign up](https://console.fonoster.io) for a Fonoster account or [login](https://console.fonoster.io) to an account you already have.
+
+<video width="100%" playsInline="" controls="muted">
+ <source src="/videos/create_an_user_account.mov" type="video/mp4" playsInline="" />
+</video>
+
+create_an_user_account

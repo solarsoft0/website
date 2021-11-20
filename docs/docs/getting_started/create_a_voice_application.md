@@ -13,7 +13,20 @@ A Programmable Voice Application is a server that takes control of the flow in a
 - `Mute` - It tells the channel to stop sending media, effectively muting the channel
 - `Unmute` - It tells the channel to allow media flow
 
-Perform the following steps to create a Voice Application.
+Perform the following steps to create a Voice Application:
+
+```none
+1. Open a new terminal
+2. Create a new folder
+3. Initiate a node application
+4. Create the file index.js, add the application's content, save the file
+5. Install the voice module
+6. Run the application
+```
+
+<video width="100%" playsInline="" controls="muted">
+ <source src="/videos/create_a_voice_application_1.mov" type="video/mp4" playsInline="" />
+</video>
 
 First, create an empty NodeJS project with:
 
@@ -62,6 +75,16 @@ info: starting voice server @ 0.0.0.0, port=3000, path=/voiceapp
 ## Using Ngrok to publish your Voice Application 
 
 Now that we have the Voice Application up and running, you need to make it available on the Internet. The fastest way to enable public access is by using Ngrok. For example, with Ngrok, you can publish a web server with a single command.
+
+```none
+1. Open a new terminal
+2. Start Ngrok with the application's protocol/port
+```
+> Remember to keep your application running
+
+<video width="100%" playsInline="" controls="muted">
+ <source src="/videos/create_a_voice_application_2.mov" type="video/mp4" playsInline="" />
+</video>
 
 Run Ngrok, in your console, with the following command:
 
