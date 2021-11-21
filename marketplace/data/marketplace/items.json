@@ -5,7 +5,7 @@
         "nlu"
       ],
       "certified": true,
-      "changelog": "https://raw.githubusercontent.com/fonoster/rox/main/CHANGELOG.md",
+      "changelog": "https://github.com/fonoster/rox/blob/main/CHANGELOG.md",
       "description": "Lifelike conversational AI with state-of-the-art virtual agent, CX edition (advance)",
       "homepage": "https://fonoster.com",
       "icon": "https://raw.githubusercontent.com/fonoster/rox/main/assets/cx_logo.png",
@@ -27,7 +27,7 @@
         "nlu"
       ],
       "certified": true,
-      "changelog": "https://raw.githubusercontent.com/fonoster/rox/main/CHANGELOG.md",
+      "changelog": "https://github.com/fonoster/rox/blob/main/CHANGELOG.md",
       "description": "Lifelike conversational AI with state-of-the-art virtual agent, ES edition (standard)",
       "homepage": "https://fonoster.com",
       "icon": "https://raw.githubusercontent.com/fonoster/rox/main/assets/es_logo.png",
