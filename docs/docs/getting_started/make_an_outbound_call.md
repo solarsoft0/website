@@ -29,7 +29,7 @@ This code starts a phone call between the two phone numbers that we pass as argu
 
 The `webhook` argument points to a Programmable Voice Application, which tells Fonoster to handle the call once the recipient answer the call.
 
-## Replace the to and from phone numbers
+## Replace the To and From phone numbers
 
 Remember that Fonoster Number you set up earlier? Go ahead and replace the existing from a number with that one, making sure to use E.164 formatting:
 
