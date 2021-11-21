@@ -14,5 +14,3 @@ To obtain your credentials, you'll need to [sign up](https://console.fonoster.io
 <video width="100%" playsInline="" controls="muted">
  <source src="/videos/create_an_user_account.mov" type="video/mp4" playsInline="" />
 </video>
-
-create_an_user_account
