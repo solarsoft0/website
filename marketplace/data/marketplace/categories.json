@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "count": 4,
+      "count": 5,
       "id": "all",
       "name": "All categories"
     },
@@ -11,7 +11,7 @@
       "name": "VoIP Provider"
     },
     {
-      "count": 1,
+      "count": 2,
       "id": "tts",
       "name": "Text to Speech"
     },
