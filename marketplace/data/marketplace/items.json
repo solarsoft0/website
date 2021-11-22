@@ -87,6 +87,28 @@
       ],
       "repository": "https://github.com/fonoster/fonoster",
       "sponsored": false
+    },
+    {
+      "categories": [
+        "tts"
+      ],
+      "certified": true,
+      "changelog": "https://github.com/fonoster/pollytts/blob/main/CHANGELOG.md",
+      "description": "AWS advanced deep learning technologies to synthesize natural sounding human speech",
+      "homepage": "https://fonoster.com",
+      "icon": "https://raw.githubusercontent.com/fonoster/pollytts/main/assets/logo.png",
+      "id": "pollytts",
+      "issues": "https://github.com/fonoster/fonoster/issues",
+      "license": "MIT",
+      "name": "Amazon Polly TTS",
+      "org": "Fonoster",
+      "picture": "/brand-assets/fonoster.svg",
+      "readme": "https://raw.githubusercontent.com/fonoster/pollytts/main/README.md",
+      "related": [
+        "googletts"
+      ],
+      "repository": "https://github.com/fonoster/pollytts",
+      "sponsored": false
     }
   ]
 }
