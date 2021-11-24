@@ -27,7 +27,7 @@ Then, configure the Voice Server to use the plugins we just installed. For examp
 const { VoiceServer } = require("@fonoster/voice");
 const GoogleTTS = require("@fonoster/googletts");
 const GoogleASR = require("@fonoster/googleasr");
-const voiceServer = new VoiceServer({ base: '/voiceapp' });
+const voiceServer = new VoiceServer();
 const speechConfig = { keyFilename: "./google.json" };
 
 // Set the server to use the speech APIS
