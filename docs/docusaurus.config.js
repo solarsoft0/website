@@ -120,6 +120,10 @@ const config = {
                 href: '/docs/support',
               },
               {
+                label: 'System Status',
+                href: 'https://status.fonoster.io',
+              },
+              {
                 label: 'Github Discussions',
                 href: 'https://github.com/fonoster/fonoster/discussions',
               },
