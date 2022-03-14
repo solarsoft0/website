@@ -100,7 +100,7 @@ body {
 }
 
 .section--bg {
-  @apply bg-gray-50 dark:bg-gray-800;
+  @apply bg-gray-500 dark:bg-gray-500;
   position: relative;
   height: 100%;
   width: 100%;
@@ -215,4 +215,29 @@ th {
 
 .sbui-typography a {
   @apply break-words;
+}
+
+.dark #hero-bg {
+  fill: #333741;
+}
+
+.hero-bg {
+  display: none;
+}
+
+@media screen and (min-width: 1056px) {
+  .hero-bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 140%;
+  }
+}
+
+@media screen and (min-width: 1173px) {
+  .hero-bg {
+    width: 100%;
+  }
 }

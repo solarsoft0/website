@@ -1,37 +1,33 @@
-import { useState, useEffect } from 'react'
-import Nav from 'components/Nav/index'
-import Footer from 'components/Footer/index'
+import { useState, useEffect } from "react";
+import Nav from "components/Nav/index";
+import Footer from "components/Footer/index";
 
 type Props = {
-  hideHeader?: boolean
-  hideFooter?: boolean
-  children: React.ReactNode
-}
+  hideHeader?: boolean;
+  hideFooter?: boolean;
+  children: React.ReactNode;
+};
 
 const DefaultLayout = (props: Props) => {
-  const { hideHeader = false, hideFooter = false, children } = props
-  const [darkMode, setDarkMode] = useState<boolean>(true)
+  const { hideHeader = false, hideFooter = false, children } = props;
+  const [darkMode, setDarkMode] = useState<boolean>(true);
 
   useEffect(() => {
-   
-    const isDarkMode = localStorage.getItem('fonosterDarkMode')
-    
-    console.log("is dark mode=" + isDarkMode)
-    
+    const isDarkMode = localStorage.getItem("fonosterDarkMode");
+
     if (isDarkMode) {
-      console.log("is dark mode 002 =" + isDarkMode)
-      setDarkMode(isDarkMode === 'true')
-      document.documentElement.className = isDarkMode === 'true' ? 'dark' : ''
+      setDarkMode(isDarkMode === "true");
+      document.documentElement.className = isDarkMode === "true" ? "dark" : "";
     } else {
-      setDarkMode(true)
-      document.documentElement.className = 'dark';
+      setDarkMode(true);
+      document.documentElement.className = "dark";
     }
-  }, [])
+  }, []);
 
   const updateTheme = (isDarkMode: boolean) => {
-    document.documentElement.className = isDarkMode ? 'dark' : ''
-    setDarkMode(isDarkMode)
-  }
+    document.documentElement.className = isDarkMode ? "dark" : "";
+    setDarkMode(isDarkMode);
+  };
 
   return (
     <>
@@ -41,7 +37,7 @@ const DefaultLayout = (props: Props) => {
       </div>
       {!hideFooter && <Footer darkMode={darkMode} updateTheme={updateTheme} />}
     </>
-  )
-}
+  );
+};
 
-export default DefaultLayout
+export default DefaultLayout;
