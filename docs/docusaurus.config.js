@@ -80,7 +80,7 @@ const config = {
           { to: '/docs/tutorials/using_google_speech', label: 'Tutorials', position: 'left' },
           { to: '/docs/reference/overview', label: 'Reference', position: 'left' },
           { to: 'https://marketplace.fonoster.com', label: 'Marketplace', position: 'left' },
-          { to: 'https://console.fonoster.io', label: 'Login', position: 'left' },
+          { to: 'https://console.fonoster.io', label: 'Sign in', position: 'left' },
           {
             href: 'https://github.com/fonoster/fonoster',
             className: 'navbar-item-github',
@@ -164,7 +164,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Fonoster, Inc.`,
+        copyright: `© ${new Date().getFullYear()}, Fonoster. All Rights Reserved.`,
       },
       prism: {
         defaultLanguage: 'js',
