@@ -219,10 +219,8 @@ const Nav = (props: Props) => {
                 </div>
               </div>
               <div className="hidden lg:flex items-center sm:space-x-3">
-                <a href="https://github.com/fonoster/fonoster" target="_blank">
-                  <Button type="default" icon={<IconStar />}>
-                    Star us on GitHub
-                  </Button>
+                <a href="https://console.fonoster.io" target="_blank">
+                  <Button type="text">Sign in</Button>
                 </a>
                 <a href="https://form.typeform.com/to/CvQqk9">
                   <Button>Early Access</Button>

@@ -1,109 +1,118 @@
-import React, { useState } from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import React, { useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-import { Button, Badge, IconStar } from '@supabase/ui'
-import FlyOut from '~/components/UI/FlyOut'
-import Transition from 'lib/Transition'
+import { Button, Badge } from "@supabase/ui";
+import FlyOut from "~/components/UI/FlyOut";
+import Transition from "lib/Transition";
 
-import SolutionsData from 'data/Solutions.json'
+import SolutionsData from "data/Solutions.json";
 
-import Solutions from '~/components/Nav/Product'
-import Developers from '~/components/Nav/Developers'
-import Announcement from '~/components/Nav/Announcement'
+import Solutions from "~/components/Nav/Product";
+import Developers from "~/components/Nav/Developers";
+import Announcement from "~/components/Nav/Announcement";
 
 type Props = {
-  darkMode: boolean
-}
+  darkMode: boolean;
+};
 
 const Nav = (props: Props) => {
-  const { basePath } = useRouter()
-  const { darkMode } = props
-  const [open, setOpen] = useState(false)
+  const { basePath } = useRouter();
+  const { darkMode } = props;
+  const [open, setOpen] = useState(false);
 
-  const [openProduct, setOpenProduct] = useState(false)
-  const [openDevelopers, setOpenDevelopers] = useState(false)
+  const [openProduct, setOpenProduct] = useState(false);
+  const [openDevelopers, setOpenDevelopers] = useState(false);
 
   React.useEffect(() => {
     if (open) {
       // Prevent scrolling on mount
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'auto'
+      document.body.style.overflow = "auto";
     }
-  }, [open])
+  }, [open]);
 
   function handleToggle(callback: any) {
-    handleCancel()
-    callback()
+    handleCancel();
+    callback();
   }
 
   function handleCancel() {
-    setOpenProduct(false)
-    setOpenDevelopers(false)
+    setOpenProduct(false);
+    setOpenDevelopers(false);
   }
 
-  const iconSections = Object.values(SolutionsData).map((solution: any, idx: number) => {
-    const { name, description, icon, label, url } = solution
+  const iconSections = Object.values(SolutionsData).map(
+    (solution: any, idx: number) => {
+      const { name, description, icon, label, url } = solution;
 
-    const content = (
-      <div className="mb-3 flex md:h-full lg:flex-col">
-        <div className="flex-shrink-0">
-          <div className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-gray-800 text-white sm:h-12 sm:w-12">
-            {/* <!-- Heroicon name: chart-bar --> */}
-            <svg
-              className="h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={icon} />
-            </svg>
+      const content = (
+        <div className="mb-3 flex md:h-full lg:flex-col">
+          <div className="flex-shrink-0">
+            <div className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-gray-800 text-white sm:h-12 sm:w-12">
+              {/* <!-- Heroicon name: chart-bar --> */}
+              <svg
+                className="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d={icon}
+                />
+              </svg>
+            </div>
+          </div>
+          <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+            <div>
+              <p className="text-base font-medium text-gray-900 dark:text-white space-x-2">
+                <span>{name}</span>
+                {label && (
+                  <Badge dot color="green">
+                    {label}
+                  </Badge>
+                )}
+              </p>
+              <p className="mt-1 text-sm text-gray-500 dark:text-dark-100">
+                {description}
+              </p>
+            </div>
+            {url && (
+              <p className="mt-2 text-sm font-medium text-brand-600 lg:mt-4">
+                Learn more <span aria-hidden="true">&rarr;</span>
+              </p>
+            )}
           </div>
         </div>
-        <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
-          <div>
-            <p className="text-base font-medium text-gray-900 dark:text-white space-x-2">
-              <span>{name}</span>
-              {label && (
-                <Badge dot color="green">
-                  {label}
-                </Badge>
-              )}
-            </p>
-            <p className="mt-1 text-sm text-gray-500 dark:text-dark-100">{description}</p>
-          </div>
-          {url && (
-            <p className="mt-2 text-sm font-medium text-brand-600 lg:mt-4">
-              Learn more <span aria-hidden="true">&rarr;</span>
-            </p>
-          )}
+      );
+      return url ? (
+        <a
+          key={`solution_${idx}`}
+          href={url}
+          className="-m-3 p-3 my-2 flex flex-col justify-between rounded-lg hover:bg-gray-50 dark:hover:bg-dark-600 transition ease-in-out duration-150"
+        >
+          {content}
+        </a>
+      ) : (
+        <div
+          key={`solution_${idx}`}
+          className="-m-3 p-3 flex flex-col justify-between rounded-lg transition ease-in-out duration-150"
+        >
+          {content}
         </div>
-      </div>
-    )
-    return url ? (
-      <a
-        key={`solution_${idx}`}
-        href={url}
-        className="-m-3 p-3 my-2 flex flex-col justify-between rounded-lg hover:bg-gray-50 dark:hover:bg-dark-600 transition ease-in-out duration-150"
-      >
-        {content}
-      </a>
-    ) : (
-      <div
-        key={`solution_${idx}`}
-        className="-m-3 p-3 flex flex-col justify-between rounded-lg transition ease-in-out duration-150"
-      >
-        {content}
-      </div>
-    )
-  })
+      );
+    }
+  );
 
   type HamburgerButtonProps = {
-    toggleFlyOut: Function
-  }
+    toggleFlyOut: Function;
+  };
 
   const HamburgerButton = (props: HamburgerButtonProps) => (
     <div
@@ -149,13 +158,13 @@ const Nav = (props: Props) => {
         </svg>
       </button>
     </div>
-  )
+  );
 
   return (
     <>
       <Announcement />
       <div className="sticky top-0 z-50">
-        <nav className="bg-white dark:bg-gray-800 border-b dark:border-gray-600">
+        <nav className="bg-white dark:bg-gray-500 border-b dark:border-gray-600">
           {/* <div className="lg:container mx-auto relative flex justify-between h-16 lg:px-10 xl:px-0"> */}
           <div className="lg:container mx-auto relative flex justify-between h-16 lg:px-16 xl:px-20">
             <HamburgerButton toggleFlyOut={() => setOpen(true)} />
@@ -177,7 +186,7 @@ const Nav = (props: Props) => {
                   </Link>
                 </div>
                 <div className="pl-4 hidden sm:ml-6 lg:flex sm:space-x-4">
-                <a
+                  <a
                     href="https://learn.fonoster.com"
                     className={`
                     inline-flex items-center px-1 border-b-2 border-transparent text-sm font-medium
@@ -220,10 +229,8 @@ const Nav = (props: Props) => {
                 </div>
               </div>
               <div className="hidden lg:flex items-center sm:space-x-3">
-                <a href="https://github.com/fonoster/fonoster" target="_blank">
-                  <Button type="default" icon={<IconStar />}>
-                    Star us on GitHub
-                  </Button>
+                <a href="https://console.fonoster.io" target="_blank">
+                  <Button type="text">Sign in</Button>
                 </a>
                 <a href="https://form.typeform.com/to/CvQqk9">
                   <Button>Early Access</Button>
@@ -244,7 +251,7 @@ const Nav = (props: Props) => {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <div className="p-4 md:p-8 h-screen w-screen fixed bg-white transform overflow-y-scroll -inset-y-0 z-50 dark:bg-dark-700">
+            <div className="p-4 md:p-8 h-screen w-screen fixed bg-white transform overflow-y-scroll -inset-y-0 z-50 dark:bg-gray-700">
               <div className="absolute right-4 top-4 items-center justify-between">
                 <div className="-mr-2">
                   <button
@@ -322,7 +329,9 @@ const Nav = (props: Props) => {
                   </a>
                 </div>
                 <div className="p-3">
-                  <p className="mb-6 text-sm text-gray-400">Products available:</p>
+                  <p className="mb-6 text-sm text-gray-400">
+                    Products available:
+                  </p>
                   {iconSections}
                 </div>
               </div>
@@ -337,7 +346,7 @@ const Nav = (props: Props) => {
         </FlyOut>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;
